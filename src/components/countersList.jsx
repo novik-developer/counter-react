@@ -20,17 +20,14 @@ const CountersList = () => {
   };
   const handleIncrement = (id, value) => {
     if (value >= 0) {
-      // console.log("handleIncrement", value);
       setCounetrs((prevState) =>
         prevState.map((count) =>
           count.id === id ? { ...count, value: value + 1 } : count
         )
       );
     }
-    // setValue((prevState) => prevState + 1);
   };
   const handleDecrement = (id, value) => {
-    // console.log("handleDecrement", value);
     if (value) {
       setCounetrs((prevState) =>
         prevState.map((count) =>
@@ -38,7 +35,6 @@ const CountersList = () => {
         )
       );
     }
-    // setValue((prevState) => prevState - 1);
   };
   return (
     <>
